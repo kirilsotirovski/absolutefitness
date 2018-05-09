@@ -1,0 +1,308 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+#hero {
+    background: url('../img/hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    height: 700px;
+}
+
+.navbar-default {
+    background-color: transparent; 
+    border-color: transparent;
+}
+.navbar-default .navbar-nav li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in;
+    border-bottom: 5px solid transparent;
+}
+.navbar-default .navbar-nav li a:hover {
+    color: white;
+    border-bottom: 5px solid white;
+    
+}
+
+.cover-text {
+    text-align: left;
+    color: white;
+    vertical-align: middle;
+}
+.cover-text h1 {
+    margin: 140px 0 40px 0;
+}
+.cover-text p {
+    font-size: 18px;
+    line-height: 28px;
+}
+a, a:hover {
+    text-decoration: none;
+}
+
+.cta {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    transition: all 0.3s ease-in;
+}
+
+.cta:hover {
+    background: white;
+    color: black;
+}
+
+.margin-right {
+    margin-right: 20px;
+}
+.margin-bottom {
+    margin-bottom: 20px;
+}
+.margin-auto {
+    margin: 0 auto;
+}
+#programs {
+    background: #b5b5b7;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#programs img {
+  
+    height: 336px;
+    margin-bottom: 30px;
+}
+
+
+
+.header {
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 5px solid white;
+    margin-bottom: 30px;
+}
+#nutrition {
+    background: #677077;
+    color: white;
+    padding-bottom: 10px;
+}
+#nutrition p {
+    font-size: 16px;
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+#app {
+    background: url('../img/iphone_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+#app p {
+    padding-top: 100px;
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+#contact {
+    background: #252839;
+    color: white;
+    padding-bottom: 50px;
+}
+#programs, #nutrition, #contact {
+    padding-top: 20px;
+}
+
+#programs h2, #nutrition h2, #contact h2 {
+    margin-bottom: 40px;
+}
+/* FOOTER */
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: normal;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+    color:  inherit;
+    transition: all 0.2s ease-in;
+}
+
+.footer-distributed p.footer-links a:hover {
+    color:  #8f9296;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 50%;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+    margin-left: 3px;
+    transition: all 0.2s ease-in;
+}
+
+.footer-distributed .footer-right a:hover {
+    background-color: #fff;
+
+    color:  #33383b;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-brand {
+        width: 220px;
+    }
+    .navbar-default .navbar-nav li a {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+    .navbar-default .navbar-nav li a:hover {
+        border-bottom: 3px solid white;
+    }
+
+    .cover-text h1 {
+        margin-top: 60px;
+        text-align: center;
+    }
+    .cover-text p {
+        text-align: center;
+    }
+  #center {
+      text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .cover-text h1 {
+        margin-top: 50px;
+    }
+  #hero {
+      text-align: center;
+  }
+  .navbar-collapse {
+      border: none;
+  }
+}
+
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+    }
+
+    .cover-text h1 {
+        margin-top: 20px;
+        
+    }
+   
+}
+
+@media only screen and (max-width: 576px) {
+    #app p {
+        font-size: 15px;
+        padding-top: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+    .programs-img, .nutrition-img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 494px) {
+    #iphone {
+        display: none;
+    }
+    #app {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 418px) {
+    #hero .cta {
+        display: block;
+        text-align: center;
+        width: 300px;
+    }
+    #hero .cta:first-of-type {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 418px) {
+    .cover-text h1 {
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .cover-text p {
+        font-size: 16px;
+    }
+}
+
