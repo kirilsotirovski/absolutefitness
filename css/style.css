@@ -2,19 +2,26 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-
 #hero {
     background: url('../img/hero_bg.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
     height: 700px;
+    padding-top: 70px;
+}
+.navbar {
+    min-height: 80px;
+}
+.navbar-brand {
+    vertical-align: middle;
 }
 
 .navbar-default {
     background-color: transparent; 
     border-color: transparent;
 }
+
 .navbar-default .navbar-nav li a {
     color: white;
     font-size: 16px;
@@ -24,12 +31,19 @@
     transition: all 0.3s ease-in;
     border-bottom: 5px solid transparent;
 }
+.navbar-default .navbar-nav li.active a,  .navbar-default .navbar-nav li.active a:hover, .navbar-default .navbar-nav li.active a:focus{
+    border-bottom: 5px solid white;
+    background: transparent;
+    color: white;
+}
+.navbar-default .navbar-nav li a:focus {
+    color: white;
+}
 .navbar-default .navbar-nav li a:hover {
     color: white;
     border-bottom: 5px solid white;
     
 }
-
 .cover-text {
     text-align: left;
     color: white;
@@ -120,6 +134,11 @@ a, a:hover {
     color: white;
     padding-bottom: 50px;
 }
+
+#contact p {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
 #programs, #nutrition, #contact {
     padding-top: 20px;
 }
@@ -198,6 +217,7 @@ a, a:hover {
 @media only screen and (max-width: 992px) {
     .navbar-brand {
         width: 220px;
+        margin-top: -5px;
     }
     .navbar-default .navbar-nav li a {
         padding-top: 15px;
@@ -206,7 +226,9 @@ a, a:hover {
     .navbar-default .navbar-nav li a:hover {
         border-bottom: 3px solid white;
     }
-
+    .navbar {
+        min-height: 50px;
+    }
     .cover-text h1 {
         margin-top: 60px;
         text-align: center;
@@ -227,9 +249,25 @@ a, a:hover {
   #hero {
       text-align: center;
   }
+  .navbar {
+      min-height: 50px;
+  }
   .navbar-collapse {
       border: none;
+      background: #292c2f;
   }
+
+  .navbar-default .navbar-nav li a {
+    padding-bottom: 10px;
+    border-bottom: none;
+}
+.navbar-default .navbar-nav li a:hover ,.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav li.active a,  .navbar-default .navbar-nav li.active a:hover, .navbar-default .navbar-nav li.active a:focus {
+    color: #292c2f;
+    background: white;
+    border-bottom: none;
+    
+}
 }
 
 
@@ -265,7 +303,6 @@ a, a:hover {
         font-size: 15px;
         padding-top: 50px;
     }
-
 }
 
 @media only screen and (max-width: 560px) {
@@ -286,6 +323,7 @@ a, a:hover {
     #app {
         padding-top: 20px;
     }
+
 }
 
 @media only screen and (max-width: 418px) {
@@ -297,6 +335,9 @@ a, a:hover {
     }
     #hero .cta:first-of-type {
         margin-bottom: 10px;
+    }
+    #contact p {
+        font-size: 15px;
     }
 }
 
