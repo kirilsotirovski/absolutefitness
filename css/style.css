@@ -20,6 +20,7 @@
 .navbar-default {
     background-color: transparent; 
     border-color: transparent;
+    transition: all 0.3s ease-in;
 }
 
 .navbar-default .navbar-nav li a {
